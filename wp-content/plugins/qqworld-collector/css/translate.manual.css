@@ -1,0 +1,6 @@
+#qqworld-translate:before {
+	content: '\f326';
+	font-family: dashicons;
+	margin-right: 5px;
+	vertical-align: middle;
+}

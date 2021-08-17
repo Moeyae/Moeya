@@ -1,0 +1,43 @@
+@keyframes cloud-storage-status {
+	0% {
+		opacity: 0;
+		transform: scale(5, 5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1) rotate(-10deg);
+	}
+}
+.cloud-storage-status {
+	position: relative;
+}
+.cloud-storage-status span.status {
+	font-size: 20px;
+	display: block;
+	position: absolute;
+	left: 300px;
+	top: -30px;
+	transform: scale(5, 5) rotate(-10deg);
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px #fff;
+	text-shadow: 2px 2px 2px #fff;
+
+	animation-name: cloud-storage-status;
+	animation-duration: .9s;
+	animation-timing-function: cubic-bezier(0.950,0.050,0.795,0.035);
+	animation-delay: 1;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+}
+
+.cloud-storage-status span.successed {
+	color: green;
+	border: 3px solid green;
+}
+.cloud-storage-status span.failed {
+	color: red;
+	border: 3px solid red;
+}

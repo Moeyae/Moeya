@@ -1,0 +1,91 @@
+ul.grabbed-attachments {
+	margin: 0 -10px;
+}
+	#gutenberg-auto-save-list ul.grabbed-attachments {
+		margin: 0 -10px -10px;
+	}
+	ul.grabbed-attachments:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	ul.grabbed-attachments li {
+		float: left;
+		margin: 10px 10px 0;
+		position: relative;
+	}
+	ul.grabbed-attachments li span.filetype {
+		position: absolute;
+		text-align: center;
+		color: #fff;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+		ul.grabbed-attachments.image a {
+			display: block;
+		}
+		ul.grabbed-attachments.image img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			object-position: center center;
+			border: 5px solid #f1f1f1;
+			border-radius: 50%;
+			box-sizing: content-box;
+		}
+		#gutenberg-auto-save-list ul.grabbed-attachments.image img {
+			border: 5px solid #fff;
+		}
+		ul.grabbed-attachments.audio li {
+			width: 100%;
+			float: none;
+		}
+			ul.grabbed-attachments.audio li audio {
+				width: 100%;
+			}
+			ul.grabbed-attachments.audio li span.filetype {
+				width: 100%;
+				left: 0;
+				top: 3px;
+			}
+		ul.grabbed-attachments.image li.grabbed-attachment a:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transform: scale(.5, .5);
+		}
+		ul.grabbed-attachments.image li.grabbed-attachment.success a:before {
+			background: url(../images/svg/success.svg) no-repeat center center;
+		}
+		ul.grabbed-attachments.image li.grabbed-attachment.error a:before {
+			background: url(../images/svg/error.svg) no-repeat center center;
+		}
+		ul.grabbed-attachments.image li.grabbed-attachment.delete a:before {
+			background: url(../images/svg/trash-can.svg) no-repeat center center;
+		}
+		ul.grabbed-attachments.image li.grabbed-attachment.break a:before {
+			background: url(../images/svg/break.svg) no-repeat center center;
+		}
+		ul.grabbed-attachments.image li span.filetype {
+			display: block;
+			left: 0;
+			bottom: 15px;
+			width: 100%;
+		}
+	ul.grabbed-attachments.video {
+	
+	}
+		ul.grabbed-attachments.video video {
+			width: 320px;
+			height: 180px;
+		}
+		ul.grabbed-attachments.video li span.filetype {
+			top: 8px;
+			right: 10px;
+		}

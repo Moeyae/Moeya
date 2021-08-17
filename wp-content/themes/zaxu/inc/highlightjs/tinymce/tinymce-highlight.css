@@ -1,0 +1,10 @@
+pre {
+    background: #eee !important;
+    border: 1px solid #e5e5e5 !important;
+    margin-bottom: 1.5em !important;
+    padding: .3em 0.5em !important;
+}
+
+pre code {
+    font-family: Menlo, Monaco, Consolas, Courier New, monospace !important;
+}

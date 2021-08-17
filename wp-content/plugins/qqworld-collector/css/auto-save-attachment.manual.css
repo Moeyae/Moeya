@@ -1,0 +1,6 @@
+#save-remote-attachments-button:before {
+	content: '\f161';
+	font-family: dashicons;
+	margin-right: 5px;
+	vertical-align: middle;
+}

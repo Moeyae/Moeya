@@ -1,0 +1,23 @@
+#scan_old_post_list .loading.pacman {
+	width: 30px;
+	height: 30px;
+}
+#scan_old_post_list td.hr {
+	padding: 0;
+	height: 1px;
+}
+.fetch-remote-images:before {
+	content: '\f316';
+	font-family: dashicons;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+#add_exclude_domain:before,
+#add_exclude_crc:before,
+#add_delete_crc:before,
+#add_delete_domain:before {
+	content: '\f132';
+	font-family: dashicons;
+	margin-right: 5px;
+	vertical-align: middle;
+}

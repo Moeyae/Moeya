@@ -1,0 +1,16 @@
+@media (max-width: 850px) {
+	.wrap .page-title-action {
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+}
+
+#qc-floating-content figure.item article .post_content {
+	max-height: 300px;
+	overflow: auto;
+}
+
+.manual.column-manual > *,
+.schedule.column-schedule > * {
+	vertical-align: middle;
+}

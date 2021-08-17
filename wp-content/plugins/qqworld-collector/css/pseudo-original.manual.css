@@ -1,0 +1,6 @@
+#pseudo-original-button:before {
+	content: '\f327';
+	font-family: dashicons;
+	margin-right: 5px;
+	vertical-align: middle;
+}

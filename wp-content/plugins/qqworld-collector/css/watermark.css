@@ -1,0 +1,73 @@
+#watermark-align-to {
+	border-collapse: collapse;
+	border: 3px solid #ddd;
+
+}
+#watermark-align-to td {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 0;
+}
+#watermark-align-to td label{
+	display: block;
+	padding: 10px;
+}
+#watermark-align-to td:hover {
+	background: #f4f4f4;
+}
+#watermark-align-to td input {
+	margin: 0;
+}
+
+#watermark-position,
+#text-position {
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	border: 10px solid #fff;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+	overflow: hidden;
+}
+#watermark-test {
+	position: absolute;
+	cursor: move;
+	cursor: -webkit-grab;
+	cursor: grab;
+	transform: scale(0,0);
+	transition: transform .3s;
+}
+	#watermark-test.show {
+		transform: scale(1,1);
+	}
+#upload-watermark-image {
+	display: inline-block;
+}
+	#upload-watermark-image img {
+		width: auto;
+		height: auto;
+		max-height: 100px;
+	}
+#watermark-form td {
+	display: table-cell !important;
+}
+#photo-test,
+#text-photo {
+	max-width: 100%;
+	height: auto;
+	float: left;
+}
+#text-content {
+	height: 32px;
+	font-size: 20px;
+	line-height: 32px;
+	right: 0;
+	bottom: 17px;
+	position: absolute;
+	text-align: right;
+	border-radius: 32px 0 0 32px;
+	font-family: 'Microsoft Yahei';
+	direction: rtl;
+	text-indent: 10px;
+	white-space: nowrap;
+}
